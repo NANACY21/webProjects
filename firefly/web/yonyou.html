@@ -68,6 +68,15 @@
 
     <ol id="yy-2019-11-18">
         <li>项目提交至GitHub</li>
+        <li>国际化 多语功能</li>
+        <li>
+            运行gitlab上1219分支前端项目时，商品档案、商品档案->新增均有问题：<br/>
+            D:\allproject\1219\UStock-web\UPC-Web\package.json中，<br/>
+            SRV_URL=http://localhost:8000换成<br/>
+            SRV_URL=http://upc-server.test.app.yyuap.com<br/>
+
+            点击完商品档案、商品档案->新增，再换回SRV_URL=http://localhost:8000
+        </li>
     </ol>
 </div>
 
@@ -108,12 +117,14 @@
         5.命令行：ynpm run debug:server<br/>
         每次包更新，需要先将node_modules 文件目录清空<br/>
 
-        D:\allproject\UStock-web\UPC-Web\src\web\common\redux\routes.jsx文件，删掉Components.ErrorView<br/>
+        之前：D:\allproject\UStock-web\UPC-Web\src\web\common\redux\routes.jsx文件，删掉Components.ErrorView<br/>
+        最新：D:\allproject\UStock-web\UPC-Web\src\web\common\redux\routes.jsx文件，删掉diworkLogin ? ErrorView :（Route标签里的）<br/>
+
         <br/>
         启动这个前端项目遇到的问题：<br/>
         <a target="_blank" href="https://blog.csdn.net/y_0232/article/details/102555209">输入命令遇到问题</a><br/>
         <a target="_blank" href="https://blog.csdn.net/qq_15916363/article/details/81041795">win10端口占用</a><br/>
-
+        <a target="_blank" href="https://blog.csdn.net/weixin_42470791/article/details/82833415">清缓存</a><br/>
         <br/>
 
 
