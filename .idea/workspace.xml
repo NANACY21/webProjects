@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d333ed1a-ea75-4e76-83e9-b898d2016df0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/yonyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/yonyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firefly/web/git.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/git.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,10 +44,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/firefly/web/yonyou.html">
+        <entry file="file://$PROJECT_DIR$/firefly/web/git.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+            <state relative-caret-position="305">
+              <caret line="19" column="104" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -157,8 +156,8 @@
         <option value="$PROJECT_DIR$/firefly/web/js/yonyou.js" />
         <option value="$PROJECT_DIR$/firefly/web/index.jsp" />
         <option value="$PROJECT_DIR$/firefly/web/idea.html" />
-        <option value="$PROJECT_DIR$/firefly/web/git.html" />
         <option value="$PROJECT_DIR$/firefly/web/yonyou.html" />
+        <option value="$PROJECT_DIR$/firefly/web/git.html" />
       </list>
     </option>
   </component>
@@ -189,7 +188,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="445" />
     <option name="y" value="160" />
     <option name="width" value="1750" />
@@ -208,6 +207,17 @@
             <path>
               <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="firefly" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="firefly" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="firefly" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
@@ -969,12 +979,12 @@
       <workItem from="1573890085284" duration="184000" />
       <workItem from="1573890272776" duration="333000" />
       <workItem from="1574039352619" duration="2923000" />
-      <workItem from="1574054886008" duration="1167000" />
+      <workItem from="1574054886008" duration="2400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2524159000" />
+    <option name="totallyTimeSpent" value="2525392000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1334,16 +1344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firefly/src/controller/CheckServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bankms/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1416,17 +1416,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firefly/web/git.html">
+    <entry file="file://$PROJECT_DIR$/firefly/src/controller/CheckServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="153">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firefly/web/yonyou.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+        <state relative-caret-position="291">
+          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firefly/web/git.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="19" column="104" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
         </state>
       </provider>
     </entry>
