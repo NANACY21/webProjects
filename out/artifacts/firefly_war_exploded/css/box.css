@@ -1,0 +1,36 @@
+.box{
+    border: 1px solid red;
+    margin: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
+}
+.box:hover{
+    background-color: aliceblue;
+}
+h3,a{
+    color: deeppink;
+}
+img {
+    height: 500px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.sel {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+/*所有id以yy开头的 ->这种样式*/
+ol[id^="yy-"]{
+    display: none;
+}
+#yy-2019-11-11 {
+    display: block;
+}
+
+/*【友零售】内容默认隐藏*/
+#work-log,#yls-div,#lj {
+    display: none;
+}

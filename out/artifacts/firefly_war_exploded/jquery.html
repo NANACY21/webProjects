@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <title>jquery基础示例</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        window.alert("连缀");
+        $(function () {
+            $('h3').css('background-color', 'red').next().css('display', 'block');
+            //修改值
+            $('h4').addClass('text').html('哈哈哈哈');
+        });
+        
+        
+        /*'$'是jq的名字
+        用jq时第一步：
+        内容都在function里写
+
+        ready作用：
+        */
+        function loading(){
+            alert("load..");
+        }
+
+        $(document).ready(function () {//匿名函数
+            alert("我的第一个jq程序");
+        });
+
+        // 等价于ready，页面加载时调用
+        $(function () {
+            alert("我的第2个jq程序");
+        });
+        //很多框架都是'$'，会混，所以...
+        jQuery(function () {
+            alert("我的第3个jq程序");
+        });
+        //鼠标划进来加样式
+        $(function () {
+            $('img').mouseover(function () {
+                //this ：把dom对象转成jq对象，this即img
+                $(this).addClass('pic');
+            });
+            $('img').mouseout(function () {
+                //this ：把dom对象转成jq对象，this即img
+                $(this).removeClass('pic');
+            });
+        })
+
+        //隐式迭代
+        $(function () {
+            $('li').mouseover(function () {
+                $(this).addClass('ss');
+            });
+        });
+
+        $(function () {
+            $('li').mouseout(function () {
+                $(this).removeClass('ss');
+            });
+
+        });
+    </script>
+    <style>
+        h4{
+            display: none;
+        }
+        .text{
+            background-color: yellow;
+        }
+        .ss{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body onload="loading()">
+<h1>jq的ready可以有多个，dom元素全加载完，页面可能未加载完就执行。onload只能有一个，必须页面加载完才执行。</h1>
+    <h2>jq语法</h2>
+    <h3>连缀</h3>看
+    <h4>哈哈哈</h4>
+    $(选择器).动作(做的事)
+    <script>
+        $(document).ready(function () {
+            alert("我的第4个jq程序");
+        });
+    </script>
+<p>隐式迭代</p>
+    <ul>
+        <li>1111</li>
+        <li>2222</li>
+        <li>3333</li>
+        <li>4444</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/*通用布局，很多jsp都可以使用该样式
+要使用该css文件的布局，请改类名
+*/
+
+/**{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*!*字体大小*!*/
+    /*font-size: 18px;*/
+/*}*/
+
+html,body{
+    height: 100%;
+    /*body内容水平居中，该div内元素居中于该div*/
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+

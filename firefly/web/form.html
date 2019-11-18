@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <title>有关表单序列化</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            //通过ajax提交数据（有无表单无所谓）
+            //弊端：要提交的数据很多时data对象中很多，表单序列化解决此问题
+            $('input[type="button"]').click(function () {
+                $.ajax({
+                    url:"FormServlet",
+                    type:"post",
+                    //这里data，要根据服务端接收的数据标识一致
+                    //该data对象的key和服务端的接收标识一样即可
+                    //data:{"username":$('input[type="text"]').val(),
+                    //"email":$('input[type="email"]').val()},
+
+                    //表单序列化
+                    //表单序列化时，服务端的接收标识和表单元素的name则必须要一致
+                    data:$('form').serialize(),
+                    success:function (resp) {
+                        alert(resp);
+                    },
+                    error: function () {
+                        alert("错误");
+                    }
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>表单序列化简化提交</h1>
+    <form action="#" method="post">
+        <input type="text" name="username">
+        <input type="email" name="email">
+        <input type="button" value="提交">
+    </form>
+</body>
+</html>

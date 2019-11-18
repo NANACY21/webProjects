@@ -1,0 +1,59 @@
+/*bankms - css示例 的样式*/
+
+/*悬停时*/
+a:hover{
+    color: #0c525d;
+}
+
+/*点击时*/
+a:active{
+    color: black;
+}
+
+/*点完时*/
+a:visited{
+    color: palegoldenrod;
+}
+
+/*p{*/
+    /*line-height: 50px;*/
+    /*border: 1px solid darkblue;*/
+    /*!*text-decoration: line-through;*!*/
+    /*text-decoration: red;*/
+/*}*/
+
+/*备忘录*/
+#note{
+    width: 700px;
+    height: 600px;
+    margin: 20px auto 20px 20px;
+    border: 1px solid #ec971f;
+    overflow-y: scroll;
+}
+
+.module {
+    width: 500px;
+    height: 300px;
+    background-color: aliceblue;
+    margin: 20px auto 20px auto;
+    overflow-y: scroll;
+}
+
+.module li{
+    list-style: none;
+    /*设置浮动之后不会向右溢出*/
+    float: left;
+    margin: 10px 20px 0px 0px;
+}
+
+.module table {
+    border: 1px solid red;
+    margin: 0px auto 0px auto;
+}
+
+.module table td{
+    border: 1px solid rebeccapurple;
+}
+.module table tr{
+    line-height: 30px;
+}

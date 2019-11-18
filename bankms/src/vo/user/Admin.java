@@ -1,0 +1,8 @@
+package vo.user;
+
+/**
+ * π‹¿Ì‘±
+ */
+public class Admin extends User {
+
+}

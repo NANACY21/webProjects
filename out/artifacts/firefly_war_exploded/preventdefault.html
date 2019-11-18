@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <title>事件的默认行为</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+        #out {
+            width: 300px;
+            height: 200px;
+            border: 1px solid;
+        }
+
+        #inner {
+            width: 200px;
+            height: 100px;
+            border: 1px solid;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("#out").click(function () {
+                alert("out");
+            })
+
+            $("#inner").click(function (event) {
+                event.stopPropagation();//阻止事件冒泡
+                alert("inner");
+            })
+        })
+    </script>
+</head>
+<body>
+<h1>1.事件的默认行为</h1>
+<a href="http://www.baidu.com">aaaa</a>
+<script>
+    $(function () {
+        alert("load");
+        $('a').click(function (event) {
+            event.preventDefault();//阻止标签默认行为
+            alert("aaa");
+        })
+    })
+</script>
+<h1>2.事件的冒泡</h1>
+<p>事件有2种行为：传播、冒泡</p>
+    <div id="out">
+        <div id="inner"> </div>
+    </div>
+</body>
+</html>

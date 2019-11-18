@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <title>列出从db读到的data</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        //页面加载时
+        $(function () {
+            $.ajax({
+                url: "ListServlet",
+                type: "get",
+                //没有data，因为不需要往后端传数据
+                success: function (resp) {
+                    var html = "";
+                    $.each(resp, function (k, v) {
+                        html += "<tr><td><input type='checkbox' name='id' value='" + v.uID + "'></td><td>" + v.nickname + "</td><td>" + v.ID + "</td><td>" + v.name + "</td><td><a href='javascript:void(0)' onclick='delNUser("+v.uID+",this)'>删除</a></td></tr>";
+                    });
+                    $('tbody').append(html);
+                },
+                error: function () {
+                    alert("db中的data加载失败");
+                }
+            });
+        });
+
+        function delNUser(uID, t) {
+            var b = window.confirm("确认删除uID=" + uID + "的普通用户");
+            if (b) {
+                var $this = $(t);
+                $.ajax({
+                    url: "DelServlet?uID=" + uID,
+                    type: "get",
+                    success: function (resp) {
+                        if (resp == "success") {
+                            alert("删除普通用户成功");
+
+                            $this.parentsUntil('tbody').remove();
+                        }
+                        else {
+                            alert("lll");
+                            alert("删除普通用户失败");
+                        }
+
+                    },
+                    error:function () {
+                        alert("删除普通用户失败");
+                    }
+                })
+            }
+            else {
+
+            }
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <table style="border: 1px solid;width: 500px">
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" >
+                </td>
+                <td>nickname</td>
+                <td>ID</td>
+                <td>name</td>
+                <td>操作</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IDEA</title>
+    <link rel="stylesheet" href="css/box.css">
+
+</head>
+<body>
+<div class="box">
+    <h3><a target="_blank" href="https://blog.csdn.net/m0_37286282/article/details/78279060">IDEA校园邮箱激活方式</a> </h3>
+    <h3><a target="_blank" href="https://blog.csdn.net/baidu_19473529/article/details/81038540">IDEA tomcat没了</a></h3>
+    <h3><a target="_blank" href="https://blog.csdn.net/baidu_39355821/article/details/79971657">启动项目报错</a> </h3>
+    <h3><a target="_blank" href="https://blog.csdn.net/qq_27093465/article/details/78338932">阿里Java规范手册</a> </h3>
+</div>
+<div class="box">
+    <h3>J2SE项目，IDEA加junit驱动jar包</h3>
+    IDEA下全局搜索junit，选4版本的即可
+</div>
+<div class="box">
+    <h3>IDEA自动生成序列化ID</h3>
+    <img src="img/1.png">
+    <p>
+        打上勾，光标移到序列化对象类名alt enter。<br/>
+        为要序列化的对象的类添加这一属性，好处：对象读写更准确
+    </p>
+</div>
+<div class="box">
+    <h3>IDEA关于重命名module</h3>
+    <p>
+        修改普通java project里的module名字：先重命名模块，再重命名目录<br/>
+        修改web项目名字：先重命名模块，再重命名目录<br/>
+        .iml、.xml中module名都要改，该module中所有文件都得看有没有原module名的，尤其是路径<br/>
+        可以在“我的电脑”中，直接删除模块的目录，IDEA上自动消失<br/>
+    </p>
+    <h3>IDEA关于重命名文件</h3>
+    <p>
+        重命名接口<br/>
+        提示的一路ok即可<br/>
+        接口名和实现这一接口的类不能重名<br/>
+    </p>
+</div>
+<div class="box">
+    <h3><a target="_blank" href="https://www.cnblogs.com/feiyujun/p/7537917.html">删除项目中module</a> </h3>
+</div>
+<div class="box">
+    <h3>IDEA调用其它模块module的类方法</h3>
+    <p>
+        IDEA支持调用本project中其他模块的包里面的方法（需要配置该模块和src同级的.iml文件，配置完需要等一会才生效，尝试切换到桌面以...）<br/>
+        这样会使IDEA的project的模块间有依赖，该模块在脱离那个模块后可能不可用，要注意该模块的代码的import<br/>
+        IDEA不支持调用本project中其他模块的包里面的类？？<br/>
+        这样在运行程序时当然会先加载调用的那个模块<br/>
+    </p>
+</div>
+<div class="box">
+    <h3>IDEA配置tomcat部署web项目时没有artifacts</h3>
+    <p>
+        重命名module可能会出现此问题<br/>
+        会有提示没有artifacts，点击Fix，添加artifacts以解决。<br/>
+        debug运行可能会报错，查看日志说1099端口号已被使用，<br/>
+        命令行：<br/>
+        netstat -ano | find "1099"<br/>
+        tasklist | find "840"<br/>
+        840是LISTENING后面的<br/>
+        taskkill /f /t /im java.exe<br/>
+        java.exe就是840的那个<br/>
+    </p>
+</div>
+<div class="box">
+    <h3>IDEA查看一个类的继承关系</h3>
+    类名右键；光标在类名上ctrl+h
+</div>
+<div class="box">
+    <h3>IDEA移动到另一台电脑</h3>
+    idea当电脑迁移后，可以直接将已安装的idea目录进行迁移（要保证迁移前后项目目录绝对路径相同）<br/>
+    <ol>
+        <li>将idea的安装目录复制到另一台电脑上</li>
+        <li>将IDEA相关的配置路径下的目录页复制到另一台电脑上（配置目录一般在C:\Users\李箎\.IntelliJIdea2018.3\目录下）</li>
+        <li>进入迁移好的idea安装目录的bin目录下，直接根据计算机位数运行即可</li>
+    </ol>
+</div>
+<div class="box">
+    <h3>IDEA新建一个project和module的问题</h3>
+    <img src="img/2.jpg">
+</div>
+</body>
+</html>

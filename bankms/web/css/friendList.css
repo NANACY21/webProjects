@@ -1,0 +1,43 @@
+.index{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    /*使该div内的内容垂直居中*/
+    line-height: 70px;
+    /*float: right;*/
+    /*background-color: white;*/
+    /*top: 100px;*/
+    margin: 10px auto 10px auto;
+    padding: 0px auto 0px auto;
+    z-index: 90;/*重叠页面优先显示值大的*/
+    clear: both;
+    /*background-color: lightpink;*/
+    /*background-color: rgba(8, 25, 226, 0.5);*/
+    background-color: rgba(8, 25, 193, 0.9);
+    /*width: 375px;*/
+    /*top: 100px;*/
+    /*浏览器屏幕右边距*/
+    /*right: 187.5px;*/
+    /*关键*/
+    /*margin: 0px 0px 0px auto;*/
+    /*padding: 0px 0px 0px 0px;*/
+}
+
+/*.index:hover{*/
+    /*background-color: rgba(8, 25, 193, 0.9);*/
+/*}*/
+
+/*横条里的超链接*/
+.index a{
+    padding: 24px 30px 24px 30px;/*属于本超链接*/
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    left: 70px;
+    color: white;
+    text-decoration: none;
+}
+
+.index a:hover{
+    /*text-decoration: underline;*/
+    background-color: #7ccecd;
+}

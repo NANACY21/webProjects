@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>分页示例2</title>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./pagination/common/common.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./pagination/common/highlight.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./pagination/pagination.css" media="screen">
+    <script type="text/javascript" src="pagination/jquery.pagination.js"></script>
+</head>
+<body>
+
+<div class="content">
+</div>
+<div class="setPageDiv">
+    <div class="m-style M-box" id="pagination">
+    </div>
+</div>
+
+<script type="text/javascript">
+	
+	var pageSize = 10;//设置每页显示条数
+    var total;//数据总条数
+    function PageCallback(index, jq) { //前一个表示您当前点击的那个分页的页数索引值，后一个参数表示装载容器。 
+  
+    	LoadData(index);
+    }
+    function pagination() {
+    	
+        $("#pagination").pagination({
+            callback:function(index,jq){
+            	LoadData(index.getCurrent()-1);
+            },
+            pageCount:Math.ceil(total/10),
+            jump: true,
+            coping: true,
+            homePage: '首页',
+            endPage: '末页',
+            prevContent: '上页',
+            nextContent: '下页',
+        //两侧显示的首尾分页的条目数
+        });
+    }
+    
+    function LoadData(pageIndex) {
+        $.ajax({
+            type : "get",
+            url : "department/listpages.action?page="+pageIndex+"&pageSize=" + pageSize,
+            async : false,
+            dataType : "json",
+            success : function(resp) {
+            	total = resp.count;
+                var lst  = resp.contents;
+                var html="";
+                $.each(lst,function(k,v){
+                	html+="&nbsp;"+v.id+"&nbsp;"+v.deptname+"<br/>";
+                });
+                $('.content').html(html);
+            }
+        });
+    }
+	
+	$(function(){
+		LoadData(0);
+		pagination();
+	});
+</script>
+</body>
+</html>

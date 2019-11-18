@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bankms/bankms.iml" filepath="$PROJECT_DIR$/bankms/bankms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firefly/firefly.iml" filepath="$PROJECT_DIR$/firefly/firefly.iml" />
+    </modules>
+  </component>
+</project>

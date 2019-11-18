@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js的DOM对象</title>
+    <style>
+        .sss{
+            color: red;
+        }
+        .ssss {
+            color: green;
+
+        }
+    </style>
+    <script>
+        var flag = false;
+        function change() {
+            var mydiv = document.getElementById('mydiv');
+            alert(mydiv.tagName);
+            if (!flag) {
+                // 设置属性
+                mydiv.className = "ssss";//不建议
+                mydiv.setAttribute("class", "ssss");
+                flag = true;
+            } else {
+                // 移除属性
+                mydiv.removeAttribute("class");
+                flag = false;
+            }
+
+        }
+        function aaa() {
+            // 获取节点类型，元素节点-1
+            alert(document.getElementById('myins').nodeType);
+            alert(document.getElementById('myins').nodeName);
+            //元素节点无nodeValue
+            alert(document.getElementById('myins').nodeValue);
+        }
+
+        function node() {
+            var mydiv = document.getElementById('test');
+            //获取该元素节点所有儿子，不包括孙子
+            var childNodes = mydiv.childNodes;
+            // alert(childNodes);
+            // alert(childNodes.length);
+            // alert(mydiv.firstChild.nodeType);//第一个儿子节点
+            // alert(mydiv.lastChild.nodeType);//最后一个儿子节点
+            // alert(mydiv.ownerDocument.nodeName);//根节点名字
+            // alert(mydiv.ownerDocument);//根节点
+            // alert(mydiv.parentNode);//父结点
+            // alert(mydiv.previousSibling);//其前一个同级节点
+            // alert(mydiv.nextSibling);//其后一个同级节点
+            alert(mydiv.attributes.length);//属性集合
+
+            for (var i = 0; i < childNodes.length; i++) {
+                if (childNodes[i].nodeType == 1) {
+                    // alert(childNodes[i].nodeName + childNodes[i].nodeType==3?"aaaa":childNodes[i].nodeType);
+                    alert(childNodes[i].nodeName);
+                }
+            }
+        }
+
+        function zhao() {
+            var div1 = document.getElementById('div1');
+            var node1 = div1.parentNode.nextSibling.nextSibling.lastChild.previousSibling;
+            alert(node1.innerText);
+
+
+        }
+
+        function nodeInsert() {
+            document.write("<p>insert</p>");//插入节点，写在哪插在哪
+            var box = document.getElementById('box');
+            //创建节点 节点一个一个的创建
+            var p = document.createElement('p');
+            //创建文本节点
+            var text = document.createTextNode('text');
+            p.appendChild(text);
+            box.appendChild(p);
+
+
+            //p放在box前面
+            // box.parentNode.insertBefore(p, box);
+            //把box换成p
+            // box.parentNode.replaceChild(box, p);
+            //删除p节点
+            box.parentNode.removeChild(p);
+
+        }
+
+        function errrr() {
+
+            // 文档操作
+            var divvv = document.createElement('divvv');
+            divvv.className = 'red';
+            //创建文本节点
+            var text = document.createTextNode('hello');
+            divvv.appendChild(text);
+            var world = document.createTextNode('world');
+            divvv.appendChild(world);
+            document.body.appendChild(divvv);
+
+            // divvv子节点个数
+            divvv.childNodes.length;
+            //第一个儿子的文本值
+            divvv.firstChild.nodeValue;
+        }
+
+        function selectTest() {
+            // alert(1);
+            var city = document.getElementById('city');
+            var options = city.options;
+            alert(options.length);
+            for (var i = 0; i < options.length; i++) {
+                //是否被选中
+                if (options[i].selected) {
+                    // alert(options[i].value);
+                    alert(city.selectedIndex);//被选中索引
+                }
+            }
+        }
+
+
+
+        //二级联动（重点）第一种写法 拼接方式
+        var json = [{"name": "黑龙江", "cities": ["哈尔滨", "齐齐哈尔", "大庆", "牡丹江"]},
+            {"name": "吉林", "cities": ["长春", "松原", "鞍山"]},
+            {"name": "辽宁", "cities": ["沈阳", "大连", "葫芦岛"]}
+            ];
+        for (var i = 0; i < json.length; i++) {
+            var obj = json[i];
+            // alert(obj.name);
+        }
+
+        function ccc() {
+            var province = document.getElementById('province');
+            var options = province.options;
+            for (var i = 0; i < options.length; i++) {
+                if (options[i].selected) {
+                    var value = options[i].value;
+                    var cities = find(value);
+                    show(cities);
+                }
+
+            }
+        }
+        function find(v) {
+            for (var i = 0; i < json.length; i++) {
+                var obj = json[i];
+                if (obj.name == v) {
+                    return obj.cities;
+                }
+            }
+            return null;
+        }
+
+        function show(cities) {
+            citycity.length = 0;//清空原来的option
+            var html = "";
+            var citycity = document.getElementById('citycity');
+            for (var j = 0; j < cities.length; j++) {
+                // alert(cities[j]);
+                // html += "<option value='" + cities[j] + "'>" + cities[j] + "</option>";
+
+                //二级联动第二种写法 new option对象 数组每个元素处都new一个
+                citycity.options[citycity.length] = new Option(cities[j], cities[j]);
+
+            }
+
+            // citycity.innerHTML = html;
+
+        }
+
+        //匿名函数
+        window.onload = function () {
+            var find1 = find('黑龙江');
+            show(find1);
+        };
+
+        function submittt() {
+            var value = document.myform.username.value;
+            if (value.length < 6) {
+                return false;
+            }
+            return true;
+            // myform.submit();//表单提交
+        }
+
+        function quanxuan() {
+            var checkall = document.getElementById('checkall');
+            if (!checkall.checked) {
+                var ids = document.getElementsByName('id');
+                for (var i = 0; i < ids.length; i++) {
+                    ids[i].checked = "";
+                }
+            } else {
+                var ids = document.getElementsByName('id');
+                for (var i = 0; i < ids.length; i++) {
+                    ids[i].checked = "checked";
+                }
+            }
+
+        }
+    </script>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+DOM即文档对象模型，是针对html、xml文档的API，BOM是基于浏览器的，<br/>
+DOM文档根是唯一的，不能有两个html标签，<br/>
+文档即html、xml文档，对象是文档对象document，模型是树模型<br/>
+节点和标签是一个含义<br/>
+节点分为元素节点、属性节点、文本节点三种节点类型<br/>
+示例：<br/>
+<div id="mydiv" class="sss">div</div>
+<input type="button" value="切换" onclick="change()">
+使用dom节点示例：<br/>
+<input type="text" id="myins" onclick="aaa()" value="这是属性节点">
+示例：<br/>
+<div id="test" onclick="node()">
+    <p>
+        pp
+    </p>
+    <div>
+        div
+    </div>
+    <ul>
+        <li>as</li>
+        <li>asss</li>
+    </ul>
+</div>
+示例：<br/>
+已知div1节点，找出666节点<br/>
+<div onclick="zhao()">
+    <div>
+        <p id="div1">acdsjvbsk</p>
+    </div>
+    <div>
+        <p>shrshshhfsh</p>
+        <p>666</p>
+    </div>
+</div>
+节点操作示例：<br/>
+<strong>主要就是节点的插入和删除</strong><br/>
+创建节点示例：<br/>
+<div id="box">
+
+</div>
+
+
+selectDOM操作示例：<br/>
+onchange：改变一次触发一次<br/>
+<select id="province" onchange="ccc()">
+    <option value="黑龙江">黑龙江</option>
+    <option value="吉林">吉林</option>
+    <option value="辽宁">辽宁</option>
+</select>
+<select id="citycity"></select>
+<br/>
+<select id="city" onchange="selectTest()">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+</select>
+表单验证示例：<br/>
+onsubmit是submit之前触发的函数，onsubmit返回假则不执行submit<br/>
+<form name="myform" action="index.jsp" onsubmit="return submittt()">
+    <input id="username" type="text" name="username">
+    <input type="submit" value="submit提交">
+    <input type="button" value="js提交" onclick="submittt()">
+</form>
+树形菜单隐藏和展示示例：<br/>
+全选示例：<br/>
+<input type="checkbox" id="checkall" onclick="quanxuan()">
+<br/>
+<input type="checkbox" name="id">
+<input type="checkbox" name="id">
+<input type="checkbox" name="id">
+<input type="checkbox" name="id">
+<input type="checkbox" name="id">
+<input type="checkbox" name="id">
+<input type="checkbox" name="id">
+</body>
+</html>

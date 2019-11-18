@@ -1,0 +1,10 @@
+#footer{
+    position: relative;
+    z-index: 0;
+    clear: both;
+}
+
+img{
+    vertical-align: middle;
+    border-radius: 6px;
+}

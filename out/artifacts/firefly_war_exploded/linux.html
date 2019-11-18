@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linux</title>
+    <style>
+        .box{
+            border: 1px solid red;
+            margin: 15px 15px 15px 15px;
+            padding: 15px 15px 15px 15px;
+        }
+        .box:hover{
+            background-color: aliceblue;
+        }
+        h3,a{
+            color: deeppink;
+        }
+        img {
+            height: 500px;
+            width: auto;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h3>VMware14上安装CentOS6.5</h3>
+    打开vmware14  =>  创建新虚拟机（即再建一个linux），已有光盘映像文件，正常操作即可。
+</div>
+<div class="box">
+    <h3>CentOS6.5换yum源（<a target="_blank" href="https://blog.csdn.net/xiaohuixing16134/article/details/79394851">参考链接</a> ）</h3>
+    <p>
+        centos换yum源要借助wget，要先安装wget<br/>
+        输入yum -y install wget命令以安装wget<br/>
+        若安装wget失败或卡死，<br/>
+        ctrl+z，ps -ef | grep yum，之后有2行显示，kill -9 第一行第二列<br/>
+        这样可终止安装<br/>
+        关防火墙，再安装wget，若还是安装失败，rpm -qa | grep "wget"以检查是否已安装wget，发现已安装wget<br/>
+        <a target="_blank" href="https://blog.csdn.net/huanbia/article/details/68070683">以上内容参考该链接</a><br/>
+        如果设置默认源时出现问题：wget不能解析主机地址：<a target="_blank" href="https://blog.csdn.net/qing_yc/article/details/55522164">可以参考链接</a><br/>
+
+    </p>
+</div>
+<div class="box">
+    <h3><a target="_blank" href="https://blog.csdn.net/wawawawawawaa/article/details/81158943">CentOS6.5安装jdk并配置环境变量</a> </h3>
+    <a target="_blank" href="https://blog.csdn.net/Bugggget/article/details/79415651">参考</a>&emsp;
+    <a target="_blank" href="https://blog.csdn.net/u013274055/article/details/73920637">参考</a>&emsp;
+    <a target="_blank" href="https://blog.csdn.net/qq_38723394/article/details/79986704">参考</a><br/>
+    （centos6.5自带yum，直接使用yum命令即可）。yum安装的jdk不用自己配置环境变量
+</div>
+<div class="box">
+    <h3>卸载linux系统上自带的mysql</h3>
+    <ol>
+        <li>打开centos命令提示符，切换为root用户</li>
+        <li>输入rpm -qa|grep -i mysql命令以检查系统含有的mysql插件，回车，若没有则说明无自带mysql，系统很干净。若有显示，则有mysql插件。</li>
+        <li>输入rpm -ev 刚才出现的自带mysql插件复制命令以卸载自带mysql。若这命令无效或错误，则输入rpm -e --nodeps 刚才出现的自带mysql插件复制命令以卸载自带mysql</li>
+    </ol>
+    <p>
+        输入find / -name mysql命令以查找老版本mysql相关的安装目录命令，若没查找到，则ok；<br/>
+        若查找到相关目录，输入rm -rf 目录名命令，进入/etc/目录查看mysql的配置文件my.cnf是否存在，若存在，输入rm -f my.cnf命令以删除。
+    </p>
+</div>
+<div class="box">
+    <h3><a target="_blank" href="https://blog.csdn.net/liangzhuoxun/article/details/81572094">CentOS6.5安装MySQL5.6</a> </h3>
+    该链接有个错误：让修改的profile文件立即生效的命令为./etc/profile<br/>
+    这不对，改成<br/>
+    source /etc/profile<br/>
+    该链接的文章的最后关于防火墙的4步可以不管它
+</div>
+<div class="box">
+    <h3>CentOS6.5安装Redis（<a target="_blank" href="https://blog.csdn.net/qq_38158631/article/details/78644274">参考链接</a> ）</h3>
+    <p>
+        已有redis-3.2.1.tar.gz<br/>
+        拖到centos系统的桌面<br/>
+        现在在桌面目录下<br/>
+        tar -zxv -f redis-3.2.1.tar.gz以解压压缩包<br/>
+        cd redis-3.2.1以切换目录到redis-3.2.1目录下<br/>
+        make<br/>
+        （cd src）<br/>
+        make install<br/>
+        在src目录下./redis-server以启动Redis服务，<br/>
+        也可以在src目录下./redis-server ../redis.conf以启动Redis服务，这样会执行你修改过的redis.conf配置文件。<br/>
+        在src目录下./redis-cli shutdown以关闭Redis服务。<br/>
+        关闭命令提示符，至此Redis安装完成。<br/>
+        cd redis-3.2.1，cd src，redis-cli以打开Redis，<br/>
+    </p>
+</div>
+<div class="box">
+    <h3>CentOS6.5安装tomcat</h3>
+    <p>
+        linux在安装tomcat之前必须已安装jdk<br/>
+        已下载好tomcat -> 拖到centos系统的桌面 -> 现在在桌面目录下<br/>
+        mv apache-tomcat-8.5.39.tar.gz /usr/local以将tomcat移动到/usr/local中<br/>
+        cd /usr/local以进入/usr/local目录<br/>
+        tar -zxv -f apache-tomcat-8.5.39.tar.gz以解压压缩包<br/>
+        rm -rf apache-tomcat-8.5.39.tar.gz以删除压缩包<br/>
+        mv apache-tomcat-8.5.39 tomcat<br/>
+        /usr/local/tomcat/bin/startup.sh以启动tomcat<br/>
+        关防火墙<br/>
+        vim /etc/sysconfig/iptables，添加8080端口<br/>
+        启动防火墙<br/>
+        打开浏览器ip地址:8080/以测试<br/>
+        /usr/local/tomcat/bin/shutdown.sh以停止tomcat<br/>
+    </p>
+</div>
+<div class="box">
+    <h3><a target="_blank" href="https://www.jb51.net/article/118595.htm">CentOS6.5安装Nginx</a> </h3>
+</div>
+<div class="box">
+    <h3>远程访问CentOS6.5</h3>
+    远程访问即Windows-MySQL和Linux-MySQL能连接，即Windows-navicat能连接/访问CentOS-MySQL中的库表<br/>
+    Windows-navicat连接CentOS-MySQL：<br/>
+    <ol>
+        <li>service mysqld start以启动mysql服务</li>
+        <li>win10下：ping 虚拟机上的ip地址，看能否ping通</li>
+        <li>Linux下：su回车密码回车</li>
+        <li>ifconfig以查看虚拟机的ip地址</li>
+        <li>root用户下：service iptables stop命令以关闭防火墙（每次关闭虚拟机都要关闭防火墙）</li>
+        <li>打开Windows-navicat，新建连接，常规（不用到SSH），连接名任意，主机名或ip地址填虚拟机的ip地址</li>
+        <li>grant all privileges on *.* to 'mysql用户名'@'%' identified by 'mysql登录密码' with grant option;</li>
+        <li>flush privileges;（这一mysql命令和上一条mysql命令每次安装mysql时一劳永逸）</li>
+    </ol>
+    <p>
+        查看网络的端口信息：netstat -ntpl<br/>
+        查看防火墙的状态：iptables -vnl<br/>
+        清除防火墙中链中的规则：iptables -F<br/>
+        在windows下的命令提示符下mysql -u root -h ip地址 -p可以访问指定ip地址下的mysql（如在windows的命令提示符中打开centos6.5下的mysql）
+    </p>
+</div>
+<div class="box">
+    <h3>多台Linux主机间免密码登录（<a target="_blank" href="https://www.cnblogs.com/zhaojiedi1992/p/zhaojiedi_linux_023_sshgenkey.htm">参考链接</a> ）</h3>
+    即在一台主机上登录另一台主机。<br/>
+    有2台linux主机A、B。A输入命令ssh B的ip地址以连接B，发现需要输入B的登录密码，怎样不需要输入密码呢？<br/>
+    <ol>
+        <li>主机A中，输入ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa命令，</li>
+        <li>主机A中，输入ssh-copy-id -i  ~/.ssh/id_rsa.pub root@B的ip地址命令，会提示输入B的登录密码，</li>
+        <li>主机A中，输入ssh-copy-id -i  ~/.ssh/id_rsa.pub root@A的ip地址命令，会提示输入A的登录密码，</li>
+    </ol>
+</div>
+<div class="box">
+    <h3><a target="_blank" href="https://www.zhihu.com/question/34611974/answer/125205457?hb_wx_block=0&utm_source=wechat_session&utm_medium=social&utm_oi=762580148443680768">安装ubuntu18.04双系统教程</a> </h3>
+    该过程遇到问题时<a target="_blank" href="https://blog.csdn.net/newbie_001/article/details/81977166">参考1</a>，<a target="_blank" href="https://blog.csdn.net/qq_41199831/article/details/83860126">参考2</a><br/>
+    <a target="_blank" href="https://blog.csdn.net/Mr__lqy/article/details/82962704">Ubuntu开机引导软件</a>（出问题百度），
+    <a target="_blank" href="https://www.cnblogs.com/cvwyh/p/10304587.html">win10开机引导软件</a><br/>
+    <p>
+        一些问题和解决办法：<br/>
+        目前我的电脑进bios：刚开机，一直F10<br/>
+        安装前：进入bios，更改启动项为从U盘启动（要先做U盘启动盘）、禁用安全启动；安装后恢复这2者。<br/>
+        没有引导项直接进win10的原因：<br/>
+        安装完后没在ubuntu下下载引导修复工具。解决办法：重装；在win10中下载引导修复工具。<br/>
+        安ubuntu完成，下引导修复工具，说重启时拔U盘，不再插入U盘。<br/>
+        双系统时，在一个系统中，搞另一个系统，另一个系统名，另一个系统的启动盘（esayBCD中）<br/>
+        easybcd中全不勾选，无默认<br/>
+        win10管理员命令行：bcdedit /set {bootmgr} path \EFI\ubuntu\shimx64.efi<br/>
+        装完ubuntu第一时间换源。
+    </p>
+    <h3>重装系统</h3>
+    <p>
+        先在好的电脑上做u盘启动盘（把U盘做成启动盘）：原料：空u盘，已有iso文件，安装LaoMaoTao_STA_bd.exe，运行该软件。<br/>
+        也可以用现成的u盘启动盘。<br/>
+    </p>
+</div>
+<div class="box">
+    <h3><a target="_blank" href="https://blog.csdn.net/kwame211/article/details/78533170">CentOS/Ubuntu命令不同点</a> </h3>
+    <h3><a target="_blank" href="https://zhidao.baidu.com/question/429154844.html">Linux/shell命令不同点</a> </h3>
+</div>
+</body>
+</html>

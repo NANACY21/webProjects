@@ -1,0 +1,106 @@
+*{  /*'*'所有标签都有的属性*/
+    margin: 0; /*水平居中，外边距=0，将默认的外边距去掉*/
+    padding: 0;/*内边距=0，将默认的内边距去掉*/
+}
+
+li{
+    list-style: none;/*html列表前没有小黑点*/
+    padding: 0;/*内边距=0，将默认的内边距去掉*/
+    margin: 0;/*水平居中，外边距=0，将默认的外边距去掉*/
+}
+
+#loginBg{
+    /*正解：margin值是指此div内所有元素最上界到此div上边界的距离*/
+    /*相对定位时不用top left定位，用margin，？*/
+    position: absolute;/*绝对定位*/
+    width: 100%;/*似此，无左右边距*/
+    height: 100%;/*高300像素*/
+    /*min-height: 100%;*/
+    top: 0px;
+    margin: 0px auto 100px 0px;
+    padding: 0px auto 0px auto;
+    clear: both;
+    z-index: -1;
+}
+
+#image{
+    position: relative;
+    width:100%;
+    height:100%;/*不包括margin*/
+    margin: 0px auto 0px auto;
+    padding: 0px auto 0px auto;
+    /*border:1px solid black;*/
+}
+
+#image img{/*指div：image中的img标签*/
+    position: relative;
+    display: none;/*这之后丢失宽高等属性*/
+    /*bsckground-size:100%;*/
+    width:100%;
+    height:100%;
+    margin: 0px auto 0px auto;
+}
+
+#image .selected{
+    display: block;/*设为块级元素*/
+}
+
+#bar span{float: left;/*向左浮动，html列表横向排*/}
+#bar ul{float: left;/*向左浮动，html列表横向排*/}
+#number li,#bar span{
+    width: 20px;/*固定宽度（适中英混排的文字）*/
+    height: 20px;
+    background-color: #000;
+    color: #fff;
+    float: left;/*向左浮动，html列表横向排*/
+    margin-right: 5px;
+    text-align: center;/*居中对齐文字*/
+    line-height: 20px;/*行高，与高度同，可让单行文本垂直居中*/
+    /*text-decoration: none;!*去除下划线*!*/
+    cursor: pointer;
+    /*使变圆形*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    /*border-right: 0;!*去掉左侧边框*!*/
+}
+
+
+
+#number .selected,#bar .arrow{/*class为selected时，这需要结合js才可见效*/
+    background-color: aquamarine;
+}
+
+#bar{
+    position: relative;/*相对定位*/
+    height: 20px;
+    width: 100%;
+    margin: 0px auto 0px auto;
+    /*align-items: center;*/
+    /*
+    以下两行使此div内所有元素整体在此div内居中
+     */
+    display: flex;
+    justify-content: center;
+    padding:0px auto 0px auto;
+    float: left;/*向左浮动，html列表横向排*/
+    /*left: 10px;*/
+    /*right: 10px;
+    /*bottom: 10px;*/
+    font: 20px verdana,Arial,sans-serif;/*设置文字大小和字体样式*/
+}
+
+#prev{
+    vertical-align: middle;
+    display: table-cell;
+}
+#next{
+    vertical-align: middle;
+    display: table-cell;
+}
+#number{
+    vertical-align: middle;
+    display: table-cell;
+}

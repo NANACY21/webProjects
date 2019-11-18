@@ -1,0 +1,57 @@
+/*我的保险模块*/
+#insuringNotice{
+    background-color: #82dade;
+}
+/*去掉列表前的小点*/
+li{
+    list-style: none;
+}
+
+/*保险页面中的一个模块的样式 class="module"*/
+#allInsProduct{
+    overflow-y: scroll;
+}
+#SSCard{
+    background-color: #9ade76;
+}
+
+#myIns{
+    background-color: #ded374;
+}
+
+.InsProduct{
+    background: #ebcccc;
+    width: 200px;
+    height: 150px;
+    /*该div距离上面的组件20px*/
+    margin: 20px 20px 0px 20px;
+    padding: 0px auto 0px auto;
+    float: left;
+    border-radius: 10px;
+}
+
+.InsProduct:hover{
+    -webkit-transform:scale(1.1); /* Safari 和 Chrome */
+}
+
+.InsProduct a{
+    bottom: 5px;
+    vertical-align: bottom;
+    color: #8a6d3b;
+}
+
+.InsProduct img{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 200px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.module a{
+    color: blueviolet;
+    text-decoration: none;
+}
+.module a:hover{
+    text-decoration: underline;
+}
