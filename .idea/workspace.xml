@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d333ed1a-ea75-4e76-83e9-b898d2016df0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firefly/web/css.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/css.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firefly/web/yonyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/yonyou.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,7 +43,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/firefly/web/yonyou.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="179" column="24" lean-forward="true" selection-start-line="179" selection-start-column="24" selection-end-line="179" selection-end-column="24" />
+              <folding>
+                <element signature="e#6158#6164#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -139,7 +153,6 @@
         <option value="$PROJECT_DIR$/firefly/web/paginationTest1.html" />
         <option value="$PROJECT_DIR$/firefly/web/paginationTest2.html" />
         <option value="$PROJECT_DIR$/firefly/web/linux.html" />
-        <option value="$PROJECT_DIR$/firefly/web/css.jsp" />
         <option value="$PROJECT_DIR$/firefly/web/yonyou1.html" />
         <option value="$PROJECT_DIR$/firefly/web/yonyou_fuben.html" />
         <option value="$PROJECT_DIR$/firefly/web/css/box.css" />
@@ -148,6 +161,7 @@
         <option value="$PROJECT_DIR$/firefly/web/idea.html" />
         <option value="$PROJECT_DIR$/firefly/web/git.html" />
         <option value="$PROJECT_DIR$/firefly/web/yonyou.html" />
+        <option value="$PROJECT_DIR$/firefly/web/css.jsp" />
       </list>
     </option>
   </component>
@@ -178,7 +192,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1440" />
     <option name="y" value="480" />
     <option name="width" value="980" />
@@ -190,35 +204,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firefly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firefly" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firefly" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firefly" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -973,11 +961,14 @@
       <workItem from="1574128203131" duration="16000" />
       <workItem from="1574128372340" duration="5333000" />
       <workItem from="1574143206184" duration="1762000" />
+      <workItem from="1574149316297" duration="6797000" />
+      <workItem from="1574165198656" duration="1320000" />
+      <workItem from="1574216015112" duration="1649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2537965000" />
+    <option name="totallyTimeSpent" value="2547731000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -989,9 +980,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1152" y="384" width="784" height="832" extended-state="0" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.732475" weight="0.6501377" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.732475" visible="true" weight="0.18612774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1277,13 +1269,6 @@
         <state relative-caret-position="-198" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firefly/web/css.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="174" column="17" lean-forward="true" selection-start-line="174" selection-start-column="17" selection-end-line="174" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bankms/src/model/impl/AnalysisModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-154">
@@ -1425,15 +1410,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/firefly/web/css.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="245" column="20" lean-forward="true" selection-start-line="245" selection-start-column="20" selection-end-line="245" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/firefly/web/yonyou.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="180" column="8" lean-forward="true" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
+        <state relative-caret-position="651">
+          <caret line="179" column="24" lean-forward="true" selection-start-line="179" selection-start-column="24" selection-end-line="179" selection-end-column="24" />
           <folding>
-            <element signature="e#4487#4493#0" expanded="true" />
-            <element signature="e#4550#4556#0" expanded="true" />
-            <element signature="e#4562#4568#0" expanded="true" />
-            <element signature="e#6076#6082#0" expanded="true" />
+            <element signature="e#6158#6164#0" expanded="true" />
           </folding>
         </state>
       </provider>
