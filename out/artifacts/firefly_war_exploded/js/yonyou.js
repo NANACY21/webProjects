@@ -27,7 +27,7 @@ function open() {
 }
 
 $(function () {
-    //点击友零售
+    //点击工作日志
     $('#wl').click(function () {
         var yls_a = document.getElementById('wl').innerHTML;
         if (yls_a == "工作日志") {
@@ -50,19 +50,5 @@ $(function () {
             $('#yls-a').html('友零售');
             $('#yls-div').css('display', 'none');
         }
-    });
-
-    //点击链接
-    $('#install').click(function () {
-        var install = document.getElementById('install').innerHTML;
-        if (install == "链接") {
-            $('#lj').css('display', 'block');
-            $('#install').html('隐藏链接');
-        } else {
-            $('#install').html('链接');
-            $('#lj').css('display', 'none');
-
-        }
-
     });
 });

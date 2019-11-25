@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=gbk" language="java" pageEncoding="gbk" %>
 <html>
 <head>
-    <title>jq所有知识</title>
+    <title>提醒事项</title>
     <script src="js/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="css/friendList.css">
     <style>
@@ -105,8 +105,14 @@
             color: orange;
         }
         .acm,.acm li a {
+
+
             color: lightseagreen;
         }
+        #knowledge a:hover{
+            background-color: red;
+        }
+
     </style>
 </head>
 <body>
@@ -125,7 +131,7 @@
 
 <div class="index">
     <a href="form.html">表单序列化</a>
-    <a href="preventdefault.html">事件的默认行为</a>
+    <a href="preventdefault.html" title="至此jq所有知识ok">事件的默认行为</a>
     <a title="VUE框架" target="_blank" href="vue.html">VUE</a>
     <a title="前端示例" target="_blank" href="tpp.html">试卷打印</a>
     <a href="/nancy/">servlet示例</a>
@@ -483,7 +489,7 @@
     <ol>
         <li>8.17hadoop没看</li>
         <li>数据结构</li>
-        <li>毕业项目</li>
+        <li>毕业论文项目</li>
     </ol>
     <h2>bug</h2>
     <ol>
@@ -594,19 +600,20 @@
         <li><a target="_blank" href="https://www.cnblogs.com/sxkgeek/p/9488703.html">NIO/BIO/AIO</a> </li>
         <li><a target="_blank" href="https://blog.csdn.net/lianjiangwei/article/details/50848531">J2EE基本组件</a> </li>
         <li><a target="_blank" href="https://blog.csdn.net/haiyunlx/article/details/83221652">J2EE核心API与组件</a> </li>
-        <li><a target="_blank" href="https://www.cnblogs.com/goxcheer/p/9299181.html">串行/并行/并发</a> </li>
         <li><a target="_blank" href="https://blog.csdn.net/weixin_42950079/article/details/83544064">as打印日志语句</a> </li>
         <li><a target="_blank" href="https://blog.csdn.net/wn084/article/details/80729230">JNDI</a> </li>
         <li><a target="_blank" href="https://www.cnblogs.com/shizhijie/p/8422662.html">session生命周期</a> </li>
         <li><a target="_blank" href="https://zhidao.baidu.com/question/1883180201393389668.html">分布式</a> </li>
         <li><a target="_blank" href="https://blog.csdn.net/jiangyu1013/article/details/80417961">分布式/集群区别</a> </li>
         <li><a target="_blank" href="http://www.360doc.com/content/18/0509/10/40060546_752383974.shtml">分布式/集群区别</a> </li>
-        <li><a target="_blank" href="https://blog.csdn.net/Java_3y/article/details/89235190">消息队列</a> </li>
         <li><a target="_blank" href="https://ask.csdn.net/questions/761329">分布式系统同步锁无效</a> </li>
         <li><a target="_blank" href="https://juejin.im/post/5c974072f265da60d428fadd">分布式系统各节点状态同步</a> </li>
         <li><a target="_blank" href="https://www.cnblogs.com/skychmz/p/11498782.html">同步锁不足与分布式锁使用</a> </li>
+        <li><a target="_blank" href="https://www.cnblogs.com/goxcheer/p/9299181.html">串行/并行/并发</a> </li>
         <li><a target="_blank" href="https://blog.csdn.net/duqi_2009/article/details/94939145">volatile是什么</a> </li>
         <li><a target="_blank" href="https://www.jianshu.com/p/2bbf4fcc74c0">volatile的作用</a> </li>
+        <li><a target="_blank" href="https://www.cnblogs.com/huangjinyong/p/9540849.html">volatile/static区别</a> </li>
+        <li><a target="_blank" href="https://blog.csdn.net/Java_3y/article/details/89235190">消息队列</a> </li>
         <li><a target="_blank" href="https://blog.csdn.net/lp284558195/article/details/80271853">Kafka</a> </li>
         <li><a target="_blank" href="https://www.cnblogs.com/Javajishuzhai/p/11358138.html">分布式服务限流</a> </li>
     </ul>
@@ -643,7 +650,7 @@
 
 <div id="help" class="model">
     <h1>技术文档</h1>
-    <h3><label class="doc">技术文档</label>&emsp;<label class="jsjc">技术教程</label>&emsp;<label class="install">工具安装教程</label>&emsp;<label class="use">工具配置/使用教程</label>&emsp;<label class="download">下载</label>&emsp;<label class="ow">官网</label>&emsp;<label class="acm">acm题</label></h3>
+    <h3><label class="doc">技术文档</label>&emsp;<label class="jsjc">技术教程</label>&emsp;<label class="use">工具配置/使用教程</label>&emsp;<label class="download">下载</label>&emsp;<label class="ow">官网</label>&emsp;<label class="acm">acm题</label></h3>
     <ul class="doc">
         <li><a target="_blank" href="https://download.csdn.net/download/pengjunlee/9959414">html帮助文档</a> </li>
         <li><a target="_blank" href="https://www.w3school.com.cn/cssref/index.asp">CSS参考手册</a> </li>
@@ -671,10 +678,6 @@
         <li><a target="_blank" href="http://androidxref.com/">Android源码解析</a> </li>
         <li><a target="_blank" href="http://codesimple.cc/">Linux配置安卓源码开发</a> </li>
     </ul>
-    <ul class="install">
-        <li><a target="_blank" href="https://www.cnblogs.com/fhen/p/6045840.html">centOS6.5_64安装MongoDB</a> </li>
-        <li><a target="_blank" href="https://jingyan.baidu.com/article/1612d500af1c97e20e1eee25.html">Xshell安装使用教程</a> </li>
-    </ul>
     <ul class="use">
         <li><a target="_blank" href="https://www.cnblogs.com/wuyun-blog/p/5679073.html">DRUID连接池实用配置</a> </li>
         <li><a target="_blank" href="https://blog.csdn.net/fxbin123/article/details/80428216">postman使用详解</a> </li>
@@ -682,8 +685,6 @@
     </ul>
     <ul class="download">
         <li><a target="_blank" href="https://blog.csdn.net/sinat_34677820/article/details/78328708">Android国内源码下载</a> </li>
-        <li><a target="_blank" href="https://blog.csdn.net/LJN951118/article/details/82875444">JSTL下载</a> </li>
-        <li><a target="_blank" href="https://blog.csdn.net/weixin_33739541/article/details/85582671">powerdesigner下载</a> </li>
     </ul>
     <ul class="ow">
         <li><a title="技术交流社区" target="_blank" href="https://juejin.im/">掘金官网</a> </li>
