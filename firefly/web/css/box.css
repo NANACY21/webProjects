@@ -1,3 +1,4 @@
+/*一个div*/
 .box{
     border: 1px solid red;
     margin: 15px 15px 15px 15px;
@@ -33,4 +34,8 @@ ol[id^="yy-"]{
 /*【友零售】内容默认隐藏*/
 #work-log,#yls-div,#lj {
     display: none;
+}
+
+h4{
+    color: red;
 }

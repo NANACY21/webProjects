@@ -1,0 +1,113 @@
+a {
+    /*float: left;*/
+    text-decoration: none;
+    color: yellowgreen;
+}
+div {
+    border: 2px solid yellowgreen;
+    margin: 30px 30px 30px 30px;
+}
+
+/*一个div*/
+.model {
+    height: auto;
+    max-height: 600px;
+    overflow: scroll;
+    padding: 30px 30px 30px 30px;
+}
+a:hover {
+    text-decoration: underline;
+    /*text-decoration: greenyellow;*/
+}
+
+div:hover {
+    border: 2px solid red;
+    border-bottom: 3px solid red;
+    border-radius: 10px;
+}
+p:hover {
+    /*border: 2px solid fuchsia;*/
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    color: red;
+}
+label{
+    color: red;
+}
+
+#knowledge li,#wti li,#help li {
+
+    list-style: none;
+    /*设置浮动之后不会向右溢出*/
+    float: left;
+    margin: 10px 40px 0px 0px;
+}
+/*笔面试分类
+样式共用*/
+.houduan,.houduan li a{
+    color: #55db78;
+}
+.qianduan,.qianduan li a{
+    color: deeppink;
+}
+.db,.db li a {
+    color: #4C84FF;
+}
+.network,.network li a {
+    color: fuchsia;
+}
+.ds,.ds li a{
+    color: lightseagreen;
+}
+.suanfa,.suanfa li a {
+    color: #4C84FF;
+}
+.jvm,.jvm li a {
+    color: blue;
+}
+.linux,.linux li a{
+    color: #4C84FF;
+}
+.msnr,.msnr li a{
+    color: red;
+}
+.docccccc,.docccccc li a{
+    color: #6c5328;
+}
+.ques,.ques li a {
+    color: #1caf9a;
+}
+.kaifa,.kaifa li a{
+    color: black;
+}
+
+/*技术文档分类*/
+.doc,.doc li a {
+    color: deeppink;
+}
+.jsjc,.jsjc li a {
+
+    color: yellowgreen;
+}
+.install,.install li a {
+    color: blue;
+}
+.use,.use li a {
+    color: indianred;
+}
+.download,.download li a {
+    color: blueviolet;
+}
+.ow,.ow li a {
+    color: orange;
+}
+.acm,.acm li a {
+
+
+    color: lightseagreen;
+}
+#knowledge a:hover{
+    background-color: red;
+}

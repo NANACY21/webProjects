@@ -249,49 +249,49 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>GitHub</td>
-                    <td>NANACY21</td>
-                    <td>Innocence2019</td>
-                </tr>
-                <tr>
-                    <td>计蒜客</td>
-                    <td>夜雨江湖</td>
-                    <td>Innocence2019</td>
-                </tr>
-                <tr>
-                    <td>JetBrains账户</td>
-                    <td>lichilichi</td>
-                    <td>LICHIlichi201619</td>
-                </tr>
-                <tr>
-                    <td>博客园</td>
-                    <td>yyjh</td>
-                    <td>LICHIlichi201619&</td>
-                </tr>
-                <tr>
-                    <td>英语四六级报名网登录</td>
                     <td></td>
-                    <td>zxcvbnm1!</td>
-                </tr>
-                <tr>
-                    <td>中国银行APP</td>
                     <td></td>
-                    <td>zxcvbnm123</td>
-                </tr>
-                <tr>
-                    <td>交通银行APP</td>
                     <td></td>
-                    <td>lccllihih201357</td>
                 </tr>
                 <tr>
-                    <td>东软培训百度网盘交作业</td>
-                    <td>18003669206</td>
-                    <td>neusoft,123</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>东软小睿APP</td>
-                    <td>liU26_ttc</td>
-                    <td>980222</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>安装VMware秘钥</td>
@@ -317,8 +317,8 @@
                     <td>微信注册</td>
                 </tr>
                 <tr>
-                    <td>黑龙江大学邮箱</td>
-                    <td colspan="2">20166109@s.hlju.edu.cn</td>
+                    <td></td>
+                    <td colspan="2"></td>
                 </tr>
                 </tbody>
             </table>
@@ -328,9 +328,6 @@
                     https://account.jetbrains.com/licenses
                 </p>
                 <p>
-                    http://www.hotjob.cn/wt/yonyou/web/index?brandCode=yonyou<br/>
-                    邮箱<br/>
-                    7478E36B
                 </p>
                 <p>
                     四六级考试报名<br/>

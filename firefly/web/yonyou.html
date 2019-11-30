@@ -10,8 +10,8 @@
 </head>
 <body>
 <div class="index">
-    <a id="wl">工作日志</a>
-    <a id="yls-a">友零售系统</a>
+    <a id="wl" href="#work-log">工作日志</a>
+    <a id="yls-a" href="#yls-div">友零售系统</a>
 </div>
 
 <div class="box" id="work-log">
@@ -25,14 +25,9 @@
     <select title="选择日期" id="xzrq" onchange="changeselect()" class="sel">
         <option>2019-11-11</option>
         <option>2019-11-12</option>
-        <option>2019-11-13</option>
         <option>2019-11-14</option>
-        <option>2019-11-15</option>
-        <option>2019-11-16</option>
         <option>2019-11-18</option>
-        <option>2019-11-19</option>
         <option>2019-11-20</option>
-        <option>2019-11-21</option>
     </select>&emsp;工作日志<br/>
 
     <!--1天 -- 1个ol
@@ -45,6 +40,8 @@
 
     <ol id="yy-2019-11-12">
         <li>熟悉项目/业务</li>
+        <li>看需求</li>
+        <li>元数据使用/配元数据</li>
     </ol>
 
     <ol id="yy-2019-11-14">
@@ -56,17 +53,9 @@
         </li>
     </ol>
 
-    <ol id="yy-2019-11-15">
-        <li>元数据使用/配元数据</li>
-    </ol>
-
-    <ol id="yy-2019-11-16">
-        <li>看需求</li>
-    </ol>
-
     <ol id="yy-2019-11-18">
         <li>项目提交至GitHub</li>
-        <li>[任务]：国际化，多语功能</li>
+        <li>[任务]：【友零售-商品中心】：国际化，内容多语功能 单租户：（为了查一张表、熟悉表）<br/></li>
         <li>
             运行gitlab上1219分支前端项目时，商品档案、商品档案->新增均有问题：<br/>
             D:\allproject\1219\UStock-web\UPC-Web\package.json中，<br/>
@@ -78,14 +67,18 @@
     </ol>
 
     <ol id="yy-2019-11-20">
-        <li>
-            友零售-商品中心开发：内容多语：<br/>
-            查找一张MySQL数据表：<br/>
-            已知"品牌属性" -> 搜索excel -> 出现档案（卡片）、列表 -> 选择列表 -> 数据源名称 -> IDEA ctrl+shift+f ENTITY_NAME = "数据源名称" 以定位java文件 ->
-            ctrl+shift+f 类名 选class标签 -> tablename即表名<br/>
-            点击页面按钮f12会得到cBillNo<br/>
-            所有字段名/值 都可以通过F12得到<br/>
-        </li>
+        <dl>
+            <dt>查找一张MySQL数据表（方式1）</dt>
+            <dd>
+                已知"品牌属性" -> 搜索excel -> 出现档案（卡片）、列表 -> 选择列表 -> 数据源名称 -> IDEA ctrl+shift+f ENTITY_NAME = "数据源名称" 以定位java文件 -><br/>
+                ctrl+shift+f 类名 选class标签 -> tablename即表名<br/>
+            </dd>
+            <dt>查找一张MySQL数据表（方式2）</dt>
+            <dd>
+                根据label名、excel表格（搜关键字以确定excel表格）->实体id->数据源名称->接下来和方式1相同<br/>
+                cCode字段的值见excel表格<br/>
+            </dd>
+        </dl>
     </ol>
 </div>
 
@@ -100,44 +93,49 @@
         【友零售】采用<a target="_blank" href="https://wenku.baidu.com/view/8221dc4753d380eb6294dd88d0d233d4b14e3ff1.html">模型驱动开发（MDD）</a>，熟悉这一概念<br/>
         开发【友零售】要知道的重要的概念：<a target="_blank" href="https://blog.csdn.net/chenkefo/article/details/81901776">熟悉元数据</a><br/>
         采用maven私服；<br/>
-        但是还是不知道友零售这个项目是干啥的<br/>
+        要知道友零售这个项目是干啥的<br/>
     </p>
 
-    <h4>熟悉系统：</h4>
+    <h4>熟悉系统</h4>
     <p>
-        2个项目：后端项目+前端项目。其中，整个后端项目--【友零售-商品中心】模块<br/>
-        IDEA打开后端项目：打开pom.xml；VSCode打开前端项目：open folder<br/>
+        GitLab两个项目：后端/前端项目<br/>
 
-        这个后端项目启动前的配置：<br/>
-        edit configurations->app.version=upc-develop<br/>
-        启动这个后端项目遇到的问题：<br/>
-        <a target="_blank" href="https://blog.csdn.net/geming2017/article/details/85134555">问题</a><br/>
-
-        这个前端项目启动前的配置：<br/>
-        基础服务u8c分支升级 项目运行；这个项目是由原来u8c分支的代码升级，master分支代码现在不涉及；<br/>
-        mdf2.0 项目的包是放在了公司的服务器上，所以需要安装用友的包工具 ynpm<br/>
-        1.将文件夹下的node_modules 文件夹清空<br/>
-        2.命令行：npm i ynpm-tool -g<br/>
-        3.命令行：ynpm install<br/>
-        4.命令行：ynpm run debug:client<br/>
-        5.命令行：ynpm run debug:server<br/>
-        每次包更新，需要先将node_modules 文件目录清空<br/>
-
-        之前：D:\allproject\UStock-web\UPC-Web\src\web\common\redux\routes.jsx文件，删掉Components.ErrorView<br/>
-        最新：D:\allproject\UStock-web\UPC-Web\src\web\common\redux\routes.jsx文件，删掉diworkLogin ? ErrorView :（Route标签里的）<br/>
-
-        启动这个前端项目遇到的问题：<br/>
-        <a target="_blank" href="https://blog.csdn.net/y_0232/article/details/102555209">输入命令遇到问题</a><br/>
-        <a target="_blank" href="https://blog.csdn.net/qq_15916363/article/details/81041795">win10端口占用</a><br/>
-        <a target="_blank" href="https://blog.csdn.net/weixin_42470791/article/details/82833415">清缓存</a><br/>
     </p>
+    <dl>
+        <dt>整个后端项目</dt>
+        <dd>
+            【友零售-商品中心】模块<br/>
+            IDEA打开后端项目：打开pom.xml<br/>
+            这个后端项目启动前的配置：edit configurations->app.version=upc-develop<br/>
+            <a target="_blank" href="https://blog.csdn.net/geming2017/article/details/85134555">启动此后端项目遇到问题</a><br/>
+        </dd>
 
+        <dt>前端项目</dt>
+        <dd>
+            VSCode打开前端项目：open folder<br/>
+            这个前端项目启动前的配置：<br/>
+            基础服务u8c分支升级 项目运行；这个项目是由原来u8c分支的代码升级，master分支代码现在不涉及；<br/>
+            mdf2.0 项目的包是放在了公司的服务器上，所以需要安装用友的包工具 ynpm<br/>
+            1.将文件夹下的node_modules 文件夹清空<br/>
+            2.命令行：npm i ynpm-tool -g<br/>
+            3.命令行：ynpm install<br/>
+            4.命令行：ynpm run debug:client<br/>
+            5.命令行：ynpm run debug:server<br/>
+            每次包更新，需要先将node_modules 文件目录清空<br/>
 
+            之前：D:\allproject\UStock-web\UPC-Web\src\web\common\redux\routes.jsx文件，删掉Components.ErrorView<br/>
+            最新：D:\allproject\UStock-web\UPC-Web\src\web\common\redux\routes.jsx文件，删掉diworkLogin ? ErrorView :（Route标签里的）<br/>
+
+            启动这个前端项目遇到的问题：<br/>
+            <a target="_blank" href="https://blog.csdn.net/y_0232/article/details/102555209">输入命令遇到问题</a><br/>
+            <a target="_blank" href="https://blog.csdn.net/qq_15916363/article/details/81041795">win10端口占用</a><br/>
+            <a target="_blank" href="https://blog.csdn.net/weixin_42470791/article/details/82833415">清缓存</a><br/>
+        </dd>
+    </dl>
 
     <h4>【友零售-商品中心】3个启动入口：</h4>
     <dl>
         <dt>后端项目1个启动入口：（->运行后端项目）</dt>
-        <dd>运行Startup.java</dd>
         <dt>前端项目2个启动入口：（微信消息 npm	->运行前端项目）</dt>
         <dd>ynpm run debug:client&emsp;页面渲染</dd>
         <dd>ynpm run debug:server&emsp;与后端通信</dd>
@@ -169,6 +167,10 @@
         <dd>db.uimeta.url=jdbc:mysql://10.16.3.72:3306/ugoods?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false</dd>
         <dd>db.uimeta.userName=root</dd>
         <dd>db.uimeta.password=lsUPC@180806</dd>
+
+        <dt>迭代环境用的数据库</dt>
+        <dd>见微信收藏3307端口</dd>
+        <dd>租户改成：tenant_id = 1292161350684928</dd>
     </dl>
 
     <h4>访问系统（系统不在本地）：</h4>
@@ -181,9 +183,12 @@
         <dt><a target="_blank" href="https://u8c-daily.yyuap.com">网址3</a> </dt>
         <dd>账号：19487888888</dd>
         <dd>密码：test0704</dd>
-        <dt><a target="_blank" href="http://u8c-test.yyuap.com">网址4</a> </dt>
+        <dt><a target="_blank" href="http://u8c-test.yyuap.com">测试环境网址</a> </dt>
         <dd>u8c_vip@163.com&emsp;yonyou@1988</dd>
         <dd>13699133654&emsp;xiaojin123456%</dd>
+
+        <dt><a target="_blank" href="http://yonsuite-iter.yyuap.com/#/">迭代环境网址</a> </dt>
+        <dd>u8c_vip@163.com&emsp;yonyou@1988</dd>
     </dl>
 
     <h4>！！！项目详细解说！！！</h4>
@@ -207,6 +212,8 @@
         熟悉数据库（136连接->ugoods库。看excel表格、xml，以熟悉表<br/>）：<br/>
         数据库内容，经后端->前端，到前端变成json，前端读取这些json以加载/显示页面的组件；页面文字都不是写在html上的，而是读db的；<br/>
         要搞清数据库表/字段和页面文字/组件的对应关系；F12->network->meta开头->preview<br/>
+        F12以查看cBillNo<br/>
+        F12以查看所有字段名/值<br/>
 
         根据数据库预置页面布局<br/>
         aa_enum表：枚举表<br/>
