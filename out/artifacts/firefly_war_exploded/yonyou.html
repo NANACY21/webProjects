@@ -28,6 +28,7 @@
         <option>2019-11-14</option>
         <option>2019-11-18</option>
         <option>2019-11-20</option>
+        <option>2019-12-03</option>
     </select>&emsp;工作日志<br/>
 
     <!--1天 -- 1个ol
@@ -79,6 +80,15 @@
                 cCode字段的值见excel表格<br/>
             </dd>
         </dl>
+    </ol>
+
+    <ol id="yy-2019-12-03">
+        [任务]<br/>
+        在业务档案最后加"附件分组"菜单，点击该菜单出现附件分组列表的页面<br/>
+        billno=pc_attachmentgrouplist<br/>
+
+
+        根据xml元数据编辑excel表格<br/>
     </ol>
 </div>
 
@@ -176,7 +186,7 @@
     <h4>访问系统（系统不在本地）：</h4>
     <dl>
         <dt><a target="_blank" href="http://retailitg.yonyouup.com/portal">网址1（稳定版 零售开发部使用）</a> </dt>
-        <dd>dxctestdemo&emsp;123456</dd>
+        <dd>dxctestdemo  123456</dd>
         <dt><a target="_blank" href="http://upcitg.yonyouup.com">网址2（网址1的子模块）</a> </dt>
         <dd>dxctestdemo</dd>
         <dd>123456</dd>
@@ -185,7 +195,7 @@
         <dd>密码：test0704</dd>
         <dt><a target="_blank" href="http://u8c-test.yyuap.com">测试环境网址</a> </dt>
         <dd>u8c_vip@163.com&emsp;yonyou@1988</dd>
-        <dd>13699133654&emsp;xiaojin123456%</dd>
+        <dd>13699133654  xiaojin123456%</dd>
 
         <dt><a target="_blank" href="http://yonsuite-iter.yyuap.com/#/">迭代环境网址</a> </dt>
         <dd>u8c_vip@163.com&emsp;yonyou@1988</dd>
@@ -217,11 +227,14 @@
 
         根据数据库预置页面布局<br/>
         aa_enum表：枚举表<br/>
-        brand表：品牌表，其字段为品牌属性；<br/>
         bill_base表：用于定义页面，其字段cBillNo标记唯一页面，一行元组 -- 一个页面，不同租户页面不同<br/>
-        billitem_base表：其字段cFieldName：成员变量，cName：json串的键。每一行元组 -- 一个组件。其cShowCaption字段即html的label。<br/>
+        billentity_base表：该页面涉及到的实体类<br/>
+        billtemplate_base表：页面大框 每个页面都一样的<br/>
+        billtplgroup_base表：页面的上下左右区域，每个页面也差不多<br/>
+        billitem_base表：其字段cFieldName：成员变量，cName：json串的键。每一行元组 -- 一个组件。其cShowCaption字段即html的label<br/>
         读取其字段以在页面上显示品牌属性及控件。包含brand表的字段。<br/>
         billruleregister表：用于注册，其字段ruleId -- bean id，billnum字段 -- 页面编号<br/>
+        brand表：品牌表，其字段为品牌属性；<br/>
         pub_ref表：参照表，reftype字段和code字段值一样<br/>
         excel中，对应数据表名<br/>
         物料档案列表.xlsm<br/>

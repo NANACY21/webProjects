@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="gbk">
-    <title>jq选择器</title>
+    <title>jquery选择器示例</title>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script>
-
-        $('a[id="myhref1"]').html();//无隐式迭代
+        //无隐式迭代
+        $('a[id="myhref1"]').html();
 
         alert("jq三种最基本选择器：标签、id、类选择器示例");
-        /*
-        */
+
         $(function () {
-            alert($('[href]').length);//该页面有href属性的元素个数
-            $('input[name="usex"]').val('女');//改value值
-            alert($('p').html());//获取所有p标签，这不能隐式迭代
+
+            alert("该页面有href属性的元素个数" + $('[href]').length);
+            //改value属性的值
+            $('input[name="usex"]').val('女');
+            //获取所有p标签内容，这不能隐式迭代，即只显示第一个<p>标签的内容
+            alert($('p').html());
+
+            //获取该div的内容
             alert($('#box').html());
             alert($('.box').html());
 
@@ -23,11 +27,10 @@
             //并集选择器
             $("ul,em").css('backgroundcolor', 'black');
 
-            //后代选择器（获取所有子代、孙代）
-            $('#myDiv span');//写法
+            //后代选择器（获取所有子代、孙代） 写法
+            $('#myDiv span');
 
             //子选择器
-
 
             // 过滤选择器
 
@@ -37,81 +40,85 @@
     </script>
 </head>
 <body>
-    <h1>一定要知道有这些功能，就像h5新增的一堆功能，不能自己写，要知道有这些方便的写法</h1>
-    <h2 class="title">title1</h2>
-    <h2>title2</h2>
-    <h3>jq三种最基本选择器示例</h3>
-    <p>
-        pppppp
-    </p>
-    <div id="box">id box</div>
-    <div class="box">class box</div>
+<p>
+    一定要知道有这些功能，就像h5新增的一堆功能，不能自己写，要知道有这些方便的写法
+</p>
+<h2 class="title">title1</h2>
+<h2>title2</h2>
+<h3>jq三种最基本选择器示例</h3>
+<p>
+    pppppp
+</p>
+<div id="box">
+    id box
+</div>
+<div class="box">
+    class box
+</div>
 
-    <ul>
-        <li>sdfs</li>
-    </ul>
-    <em>ssdf</em>
+<ul>
+    <li>sdfs</li>
+</ul>
+<em>ssdf</em>
 
-    <div id="myDiv">
-        <span>span</span>
-    </div>
+<div id="myDiv">
+    <span>span</span>
+</div>
 
-    <h2>属性选择器</h2>
-    <script>
-        $(function () {
+<h2>属性选择器</h2>
+<script>
+    $(function () {
 
+    });
+</script>
+<a href="">vv</a>
+<input name="usex" type="text" value="男"/>
+
+<h2>过滤选择器</h2>
+
+<h2>隐藏与显示</h2>
+<div id="hhhh">divhhhh</div>
+<input type="button" id="xianshi" value="显示">
+<input type="button" id="yincang" value="隐藏">
+<script>
+    $(function () {
+        $('input[id="yincang"]').click(function () {
+            $('#hhhh').hide();
         });
-    </script>
-    <a href="">vv</a>
-    <input name="usex" type="text" value="男"/>
-
-    <h2>过滤选择器</h2>
-
-    <h2>隐藏与显示</h2>
-    <div id="hhhh">divhhhh</div>
-    <input type="button" id="xianshi" value="显示">
-    <input type="button" id="yincang" value="隐藏">
-    <script>
-        $(function () {
-            $('input[id="yincang"]').click(function () {
-                $('#hhhh').hide();
-            });
-            $('input[id="xianshi"]').click(function () {
-                $('#hhhh').show();
-            })
+        $('input[id="xianshi"]').click(function () {
+            $('#hhhh').show();
         })
-    </script>
+    })
+</script>
 
-    <h2>基于文本内容的选择器</h2>
-    <div>欢迎访问neusoft.com</div>
-    <div>baidu.com</div>
-    <ul class="myul">
-        <li >1111</li>
-    </ul>
-    <ul class="myuxdddl">
-        <li >2222</li>
-    </ul>
-    <script>
-        $(function () {
-            $('div:contains(neusoft.com)').css('color', 'red');
-            //div中无内容
-            $('div:empty').className;
+<h2>基于文本内容的选择器</h2>
+<div>欢迎访问yonyou.com</div>
+<div>baidu.com</div>
+<ul class="myul">
+    <li >1111</li>
+</ul>
+<ul class="myuxdddl">
+    <li >2222</li>
+</ul>
+<script>
+    $(function () {
+        $('div:contains(yonyou.com)').css('color', 'red');
+        //div中无内容
+        $('div:empty').className;
 
-            //获取所有ul，ul内的元素有class为myul的（与交集选择器的区别？？）
-            $('ul:has(.myul)').css('background-color', 'black');
-        });
-    </script>
-    <h2></h2>
-    <script>
-        $(function () {
-            //所有表单元素
-            var len = $('#myform :input').length;
-            //
-            var op = $(":selected").val();
-            alert(op);
-        })
-    </script>
-
-
+        //获取所有ul，ul内的元素有class为myul的（与交集选择器的区别？？）
+        $('ul:has(.myul)').css('background-color', 'black');
+    });
+</script>
+<h2></h2>
+<script>
+    $(function () {
+        //所有表单元素
+        var len = $('#myform :input').length;
+        //
+        var op = $(":selected").val();
+        alert(op);
+    })
+</script>
 </body>
 </html>

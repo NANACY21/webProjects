@@ -2,101 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="gbk">
-    <title>jq事件</title>
+    <title>jquery事件示例</title>
     <script src="js/jquery-3.2.1.min.js"></script>
     <style>
         .temp{
             background-color: yellow;
         }
     </style>
-    <script>
-
-
-    </script>
 </head>
 <body>
-    <script>
-        $(function () {
-            //键盘事件
-            // $(document).keydown(function (event) {
-            //     alert(event.keyCode);
-            // });
+<script>
+    $(function () {
+        //键盘事件
+        // $(document).keydown(function (event) {
+        //     alert(event.keyCode);
+        // });
 
-            //获取焦点事件
-            // $('input').focus(function () {
-            //     //alert($(this).val());
-            //     // $('input').blur();
-            //     $(this).addClass('temp');
-            // }).blur(function () {
-            //     alert($(this).val());
-            //     $(this).removeClass('temp');
-            // });
+        //获取焦点事件
+        // $('input').focus(function () {
+        //     //alert($(this).val());
+        //     // $('input').blur();
+        //     $(this).addClass('temp');
+        // }).blur(function () {
+        //     alert($(this).val());
+        //     $(this).removeClass('temp');
+        // });
 
-            //绑定多个事件
-            // $('input').on({
-            //     //key事件名称 value函数
-            //     focus: function () {
-            //         alert("获得焦点");
-            //     },
-            //     blur: function () {
-            //         alert("失去焦点");
-            //     }
-            // });
-            // $('input').off();//移除所有事件
-            //$('input').off('focus');//移除该事件
+        //绑定多个事件
+        // $('input').on({
+        //     //key事件名称 value函数
+        //     focus: function () {
+        //         alert("获得焦点");
+        //     },
+        //     blur: function () {
+        //         alert("失去焦点");
+        //     }
+        // });
+        // $('input').off();//移除所有事件
+        //$('input').off('focus');//移除该事件
 
-            //传参，参数：任意有效类型
+        //传参，参数：任意有效类型
 
-            // $('input').bind('blur', {name:'lichi'}, function (event) {
-            //     alert(event.data.name);
-            // });
-        });
-    </script>
-    <input type="text" value="李篪">
+        // $('input').bind('blur', {name:'lichi'}, function (event) {
+        //     alert(event.data.name);
+        // });
+    });
+</script>
+<input type="text" value="李篪"><br/>
+<h1>动画</h1>
+<div style="display: none">
+    dvsfvsdbgbdsvbadfbdabfdbfdbfbfdbfdavfdavsahvkiaugvorgve
+</div>
 
-    <h1>动画</h1>
-    <div style="display: none"> dvsfvsdbgbdsvbadfbdab
-    fdbfdbfbfdbfdavfdavsahvkiaugvorgve</div>
-    <h3>图片淡入淡出</h3>
-    <h6>html页面元素name一般避开关键字</h6>
-    <img src="img/0.jpg">
-    <input type="button" name="btnin" value="淡入">
-    <input type="button" name="btnout" value="淡出">
-    <p></p>
-    <input type="button" name="btndown" value="淡入">
-    <input type="button" name="btnup" value="淡出">
-    <script>
-        $(function () {
-            $('div').show(1000);
+<h3>图片淡入淡出</h3>
+<p>
+    html页面元素name一般避开关键字
+</p>
+<img src="img/0.jpg"><br/>
+<input type="button" name="btnin" value="淡入">
+<input type="button" name="btnout" value="淡出"><br/>
+<input type="button" name="btndown" value="淡入">
+<input type="button" name="btnup" value="淡出"><br/>
+<script>
+    $(function () {
+        $('div').show(1000);
 
-            //input元素的点击事件效果
-            $('input').click(function () {
-                var $div = $('div');
-                // if($div.css('display')=='none'){
-                //     $div.show(1000);
-                // }
-                // else {
-                //     $div.hide(1000);
-                // }
+        //input元素的点击事件效果
+        $('input').click(function () {
+            var $div = $('div');
+            // if($div.css('display')=='none'){
+            //     $div.show(1000);
+            // }
+            // else {
+            //     $div.hide(1000);
+            // }
 
-                $div.toggle(2000);
-            })
-            //淡入淡出
-            $('input[name="btnin"]').click(function () {
-                $('img').fadeIn('slow');
-            })
-            $('input[name="btnout"]').click(function () {
-                $('img').fadeOut('slow');
-            })
-
-            $('input[name="btndown"]').click(function () {
-                $('img').slideDown('slow');
-            })
-            $('input[name="btnup"]').click(function () {
-                $('img').slideUp('slow');
-            })
-
+            $div.toggle(2000);
         })
-    </script>
+        //淡入淡出
+        $('input[name="btnin"]').click(function () {
+            $('img').fadeIn('slow');
+        })
+        $('input[name="btnout"]').click(function () {
+            $('img').fadeOut('slow');
+        })
+
+        $('input[name="btndown"]').click(function () {
+            $('img').slideDown('slow');
+        })
+        $('input[name="btnup"]').click(function () {
+            $('img').slideUp('slow');
+        })
+    })
+</script>
 </body>
 </html>

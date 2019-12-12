@@ -26,6 +26,7 @@ import java.util.Date;
  * urlPatterns  地址栏路径只要包含nancy，就执行该servlet  全局分发配置
  * loadOnStartup    数值0-9   当容器启动时->由服务器初始化实例化servlet   loadOnStartup值越小的->启动时机越早（多个servlet都设置此）
  * 一般实例化初始化是在第一次请求该servlet时
+ * @author lc
  */
 @WebServlet(name = "NancyServlet", urlPatterns = "/nancy/*", initParams = {@WebInitParam(name = "name", value = "nancy")})
 public class NancyServlet extends HttpServlet {
@@ -60,6 +61,7 @@ public class NancyServlet extends HttpServlet {
      * @throws ServletException
      * @throws IOException
      */
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //设置响应类型MIME，响应出来的编码用gbk编码
         response.setContentType("text/html;charset=gbk");//呈现页面
@@ -79,6 +81,7 @@ public class NancyServlet extends HttpServlet {
      * @throws ServletException
      * @throws IOException
      */
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

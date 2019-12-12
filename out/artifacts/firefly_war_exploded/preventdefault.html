@@ -25,9 +25,10 @@
             })
 
             $("#inner").click(function (event) {
-                event.stopPropagation();//阻止事件冒泡
+                //阻止事件冒泡
+                event.stopPropagation();
                 alert("inner");
-            })
+            });
         })
     </script>
 </head>
@@ -46,7 +47,9 @@
 <h1>2.事件的冒泡</h1>
 <p>事件有2种行为：传播、冒泡</p>
     <div id="out">
-        <div id="inner"> </div>
+        <div id="inner">
+
+        </div>
     </div>
 </body>
 </html>

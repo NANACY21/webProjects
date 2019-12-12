@@ -6,26 +6,26 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
         //json串（也就是js数组），键值对的
-        //json串（也就是js数组）
         var json = [
-            {"name":"lichi","age":21,"gender":"男","loves":["足球","篮球"]},
-            {"name":"lichi2","age":22,"gender":"女","loves":["足球","篮球","羽毛球"]},
-            {"name":"lichi3","age":23,"gender":"男","loves":["足球","篮球"]}
+            {"name": "lichi", "age": 21, "gender": "男", "loves": ["足球", "篮球"]},
+            {"name": "lichi2", "age": 22, "gender": "女", "loves": ["足球", "篮球", "羽毛球"]},
+            {"name": "lichi3", "age": 23, "gender": "男", "loves": ["足球", "篮球"]}
         ];
 
         //遍历js数组（为了明确json格式）
-        for (var i = 0; i < json.length;i++) {
+        for (var i = 0; i < json.length; i++) {
+
+            //对象
             var obj = json[i];
             document.write("name:" + obj.name + "<br/>");
             document.write("age:" + obj.age + "<br/>");
             document.write("gender:" + obj.gender + "<br/>");
             var loves = obj.loves;
-            for (var j=0;j<loves.length;j++) {
+            for (var j = 0; j < loves.length; j++) {
                 document.write("loves:" + loves[j] + "<br/>");
             }
             document.write("<br/>");
         }
-
 
         //内存中的java对象数据转换成json格式的数据（即json串），并显示出来（js中）
         //前端人员知道json格式即可
@@ -47,10 +47,6 @@
     </script>
 </head>
 <body>
-<p>JSON指的是javaScript对象表示法</p>
-<p>轻量级的文本数据交换格式</p>
-<p>哪种语言使用JSON都可以，独立于语言和平台</p>
-<p>json写法是js的语法</p>
 <table>
     <tr>
         <td>学号</td>
@@ -63,6 +59,7 @@
 <input type="text" name="username"><span></span>
 <script>
     $(function () {
+        //失去焦点时
         $('input').blur(function () {
             //UI的数据给servlet，即用户名
             $.post("CheckServlet", {"name": $(this).val()}, function (resp) {
@@ -74,9 +71,9 @@
                 }
             });
         });
-
     });
 </script>
+
 <h3>加载json文件到jq（不常用）</h3>
 <script>
     $(function () {
@@ -87,7 +84,6 @@
             $.each(data, function (k, v) {
                 alert(v.a + " " + v.b + " " + v.c);
             });
-
         });
     })
 </script>

@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 @WebServlet(name = "CheckServlet",urlPatterns = "/CheckServlet")
 public class CheckServlet extends javax.servlet.http.HttpServlet {
 
+    @Override
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         PrintWriter out = response.getWriter();
         String name = request.getParameter("name");

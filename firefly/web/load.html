@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="gbk">
-    <title>ajax相关</title>
+    <title>jquery - Ajax所有知识</title>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script>
         $(function () {
             $('input').click(function () {
                 //jq封装的ajax
                 $('#box').load("innerload.html",function (response,status,shr) {
-                    //弹出inner.html内容
+                    //弹出innerload.html内容
                     alert(response);
                 });
             });
@@ -17,40 +17,36 @@
     </script>
 </head>
 <body>
-<h3>ajax作用之一</h3>
-<p>动态的把innerload.html包含进此网页，此页面还无需刷新</p>
 <div id="box">
-
 </div>
-<input title="点击后，inner.html加载进此div里" type="button" value="加载页面">
+<input title="点击后，innerload.html加载进此div里" type="button" value="加载页面"><br/>
+
 <h2>用户注册，用户名不能重复 - 示例</h2>
 <input type="text" name="username"><span></span>
 <script>
     $(function () {
+        // 组件元素失去焦点时
         $('input').blur(function () {
             $.ajax({
                 //UI的数据给servlet
-                url:"CheckServlet",
-                type:"post",
-                data:{"name":$(this).val()},
-                success:function (resp) {
-                    if(resp=="exist"){
+                url: "CheckServlet",
+                type: "post",
+                data: {"name": $(this).val()},
+                success: function (resp) {
+                    if (resp == "exist") {
                         $('span').html('用户名已经存在!!!');
-                    }
-                    else {
+                    } else {
                         $('span').html('用户名可用!!!');
                     }
                 },
-                error:function () {
+                error: function () {
                     alert("出错了");
                 }
             })
         })
 
-    })
+    });
 </script>
-<h2>ajax作用之二</h2>
-<p>异步提交UI的数据，而无需刷新整个页面</p>
 
 <h3>ajaxSetup方法，通用配置，对同一个url进行不同操作时应用，如一个servlet做增删改查操作</h3>
 <script>
@@ -73,7 +69,8 @@
 <script>
     var obj = {a: 1, b: 2, c: 3};
     var k = $.param(obj);
-    alert(k);//把对象形式转成字符串形式，传
+    //把对象形式转成字符串形式，传
+    alert(k);
 </script>
 </body>
 </html>
