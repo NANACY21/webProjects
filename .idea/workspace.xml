@@ -9,67 +9,13 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/firefly/web/yonyou.html" line="87" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/firefly/web/yonyou.html" line="197" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/firefly/web/yonyou.html" line="86" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/firefly/web/yonyou.html" line="155" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d333ed1a-ea75-4e76-83e9-b898d2016df0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/firefly/web/css/style1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/src/controller/CheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/src/controller/CheckServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/src/controller/FormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/src/controller/FormServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/src/controller/NancyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/src/controller/NancyServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/Ajax.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/Filter.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/JSON.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/JSON.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/WEB-INF/classes/controller/CheckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/WEB-INF/classes/controller/CheckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/WEB-INF/classes/controller/FormServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/WEB-INF/classes/controller/FormServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/WEB-INF/classes/controller/NancyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/WEB-INF/classes/controller/NancyServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/action.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/action.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/as.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/css.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/css.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/html.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/idea.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/inner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/inner2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/jquery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/js.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/js.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/linux.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/load.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/load.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/preventdefault.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/preventdefault.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/selector.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/selector.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/vue.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/firefly/web/yonyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/yonyou.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/Ajax.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/Filter.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/JSON.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/JSON.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/WEB-INF/classes/controller/CheckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/WEB-INF/classes/controller/CheckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/WEB-INF/classes/controller/FormServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/WEB-INF/classes/controller/FormServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/WEB-INF/classes/controller/NancyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/WEB-INF/classes/controller/NancyServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/action.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/action.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/css.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/css.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/html.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/idea.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/inner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/inner2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/jquery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/js.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/js.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/linux.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/load.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/load.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/preventdefault.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/preventdefault.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/selector.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/selector.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/vue.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/yonyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/firefly_war_exploded/yonyou.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -247,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -264,7 +211,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1061,11 +1007,21 @@
       <workItem from="1576029356352" duration="701000" />
       <workItem from="1576049905140" duration="54000" />
       <workItem from="1576114419793" duration="1001000" />
+      <workItem from="1576131701444" duration="2114000" />
+      <workItem from="1576301695590" duration="48000" />
+      <workItem from="1576301873714" duration="2518000" />
+      <workItem from="1576461605611" duration="1780000" />
+      <workItem from="1576546733277" duration="1237000" />
+      <workItem from="1576724568674" duration="1975000" />
+      <workItem from="1576759973524" duration="446000" />
+      <workItem from="1577090762580" duration="1257000" />
+      <workItem from="1577264587776" duration="1624000" />
+      <workItem from="1577325573640" duration="7163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2746337000" />
+    <option name="totallyTimeSpent" value="2766499000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1079,7 +1035,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.732475" visible="true" weight="0.24251497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.732475" visible="true" weight="0.26497006" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1115,7 +1071,7 @@
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.732475" visible="true" weight="0.39836568" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.732475" visible="true" weight="0.24500997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1126,7 +1082,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32618025" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.69165486" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49377593" visible="true" weight="0.2464503" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49377593" weight="0.30985916" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
@@ -1402,13 +1358,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/Navicat/MySQL/Servers/136/ugoods/新增菜单.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/Navicat/MySQL/Servers/136/ugoods/新增菜单.sql" />
     <entry file="file://$PROJECT_DIR$/firefly/src/controller/NancyServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2449">
@@ -1483,10 +1433,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/firefly/web/yonyou.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="192" column="48" lean-forward="true" selection-start-line="192" selection-start-column="48" selection-end-line="192" selection-end-column="48" />
+        <state relative-caret-position="1525">
+          <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
           <folding>
-            <element signature="e#895#901#0" expanded="true" />
+            <element signature="e#4953#4959#0" expanded="true" />
+            <element signature="e#5002#5008#0" expanded="true" />
+            <element signature="e#5052#5058#0" expanded="true" />
+            <element signature="e#5064#5070#0" expanded="true" />
           </folding>
         </state>
       </provider>
