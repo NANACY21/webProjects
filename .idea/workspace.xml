@@ -14,7 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d333ed1a-ea75-4e76-83e9-b898d2016df0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firefly/web/yonyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/yonyou.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,7 +45,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -192,26 +191,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firefly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firefly" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
@@ -1019,11 +999,12 @@
       <workItem from="1577325573640" duration="7163000" />
       <workItem from="1577343997323" duration="673000" />
       <workItem from="1577411883881" duration="5826000" />
+      <workItem from="1577428580823" duration="876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2772998000" />
+    <option name="totallyTimeSpent" value="2773874000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1435,8 +1416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/firefly/web/yonyou.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="159" column="25" lean-forward="true" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
+        <state relative-caret-position="375">
+          <caret line="196" column="19" lean-forward="true" selection-start-line="196" selection-start-column="19" selection-end-line="196" selection-end-column="19" />
           <folding>
             <element signature="e#4953#4959#0" expanded="true" />
             <element signature="e#5002#5008#0" expanded="true" />
