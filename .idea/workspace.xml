@@ -8,14 +8,14 @@
       <artifact name="firefly:war exploded" />
     </artifacts-to-build>
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/firefly/web/yonyou.html" line="86" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/firefly/web/yonyou.html" line="155" mnemonic="3" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="d333ed1a-ea75-4e76-83e9-b898d2016df0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefly/web/yonyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/yonyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankms/src/model/impl/BankCardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bankms/src/model/impl/BankCardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firefly/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firefly/web/js/yonyou.js" beforeDir="false" afterPath="$PROJECT_DIR$/firefly/web/js/work_log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firefly/web/yonyou.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +46,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bankms/src/model/impl/BankCardServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Documents/Navicat/MySQL/Servers/迭代环境136/ugoods/标签备注多语.sql" />
         <option value="$USER_HOME$/Documents/Navicat/MySQL/Servers/迭代环境136/ugoods/标签分组备注多语.sql" />
         <option value="$USER_HOME$/Documents/Navicat/MySQL/Servers/迭代环境136/ugoods/标签分组名称多语.sql" />
         <option value="$USER_HOME$/Documents/Navicat/MySQL/Servers/迭代环境136/ugoods/标签名称多语.sql" />
@@ -150,8 +159,9 @@
         <option value="$PROJECT_DIR$/firefly/web/css/style1.css" />
         <option value="$PROJECT_DIR$/firefly/web/as.html" />
         <option value="$PROJECT_DIR$/firefly/web/idea.html" />
-        <option value="$PROJECT_DIR$/firefly/web/index.jsp" />
         <option value="$PROJECT_DIR$/firefly/web/yonyou.html" />
+        <option value="$PROJECT_DIR$/firefly/web/index.jsp" />
+        <option value="$PROJECT_DIR$/bankms/src/model/impl/BankCardServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -183,16 +193,68 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1270" />
-    <option name="width" value="1300" />
-    <option name="height" value="1400" />
+    <option name="x" value="-8" />
+    <option name="width" value="1297" />
+    <option name="height" value="1398" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankms" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="firefly" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="firefly" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="firefly" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
@@ -1002,11 +1064,15 @@
       <workItem from="1577411883881" duration="5826000" />
       <workItem from="1577428580823" duration="876000" />
       <workItem from="1577512159368" duration="902000" />
+      <workItem from="1578277356037" duration="7521000" />
+      <workItem from="1578996026776" duration="1133000" />
+      <workItem from="1579003473069" duration="2360000" />
+      <workItem from="1579052021665" duration="5249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2774776000" />
+    <option name="totallyTimeSpent" value="2791039000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1019,8 +1085,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.732475" weight="0.26996008" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.732475" visible="true" weight="0.23552895" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1056,7 +1123,7 @@
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.732475" visible="true" weight="0.26996008" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.732475" visible="true" weight="0.23595506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1140,8 +1207,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/Navicat/MySQL/Servers/迭代环境136/ugoods/客户级别名称多语.sql" />
-    <entry file="file://$USER_HOME$/Documents/Navicat/MySQL/Servers/迭代环境136/ugoods/客户属性备注多语.sql" />
     <entry file="file://$USER_HOME$/Documents/Navicat/MySQL/Servers/迭代环境136/ugoods/客户属性别名多语.sql" />
     <entry file="file://$USER_HOME$/Documents/Navicat/MySQL/Servers/迭代环境136/ugoods/客户属性名称多语.sql" />
     <entry file="file://$USER_HOME$/Documents/Navicat/MySQL/Servers/迭代环境136/ugoods/品牌logo多语.sql" />
@@ -1245,22 +1310,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firefly/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/firefly/web/js/work_log.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="174" column="29" lean-forward="true" selection-start-line="174" selection-start-column="29" selection-end-line="174" selection-end-column="29" />
+        <state relative-caret-position="23">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firefly/web/yonyou.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="196" column="13" lean-forward="true" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
-          <folding>
-            <element signature="e#1328#1334#0" expanded="true" />
-            <element signature="e#5048#5054#0" expanded="true" />
-            <element signature="e#5060#5066#0" expanded="true" />
-          </folding>
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firefly/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bankms/src/model/impl/BankCardServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>

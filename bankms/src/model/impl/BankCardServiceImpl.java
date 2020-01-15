@@ -22,7 +22,6 @@ import static util.Tool.getTime;
  * ATM机马上吐钱时发微信红包，解决办法：分布式锁
  * <p>
  * <p>
- * 事务：2件事要么全成功，要么全失败
  * 同步锁：同一时刻两件事不能同时执行
  */
 public class BankCardServiceImpl implements BankCardService {

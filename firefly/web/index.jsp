@@ -41,7 +41,6 @@
     <a href="#wti">笔面试</a>
     <a title="缓冲记录区" href="#knowledge">技术知识</a>
     <a href="#help">技术文档</a>
-    <a target="_blank" title="用友" href="yonyou.html">工作日志</a>
 </div>
 
 <div id="note" class="model">
