@@ -15,6 +15,7 @@ import java.io.IOException;
 @WebServlet(name = "p_myLoanServlet", urlPatterns = "/p_myLoanServlet")
 public class p_myLoanServlet extends HttpServlet {
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         LoanModel loanModel = new LoanModel();
         String uID = (String) request.getSession().getAttribute("uID").toString();
@@ -29,6 +30,7 @@ public class p_myLoanServlet extends HttpServlet {
         request.getRequestDispatcher("p_myLoan.jsp").forward(request, response);
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }

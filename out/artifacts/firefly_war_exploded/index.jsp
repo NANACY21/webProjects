@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=gbk" language="java" pageEncoding="gbk" %>
 <html>
 <head>
-<%--    这是一个提醒事项框架--%>
+<%--    提醒事项框架--%>
     <title>提醒事项</title>
     <script src="js/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="css/friendList.css">

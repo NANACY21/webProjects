@@ -41,7 +41,8 @@ function transferAccount() {
         return false;
     }
     var ff = /^\d+\.?\d{0,2}$/;
-    if(!ff.test(money2.value)){//只能输入>0的钱数 全为数字
+    if (!ff.test(money2.value)) {//只能输入>0的钱数 全为数字
+
         alert("金额格式错误！");
         return false;
     }

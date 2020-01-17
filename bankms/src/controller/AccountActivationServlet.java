@@ -16,6 +16,7 @@ import model.impl.BankCardServiceImpl;
 @WebServlet(name = "AccountActivationServlet", urlPatterns = "/accountActivationServlet")
 public class AccountActivationServlet extends HttpServlet {
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String Jsp = request.getParameter("Jsp");//账户激活成功后跳到哪里，返回一个.jsp
         String cardID = request.getParameter("cardID");
@@ -31,6 +32,7 @@ public class AccountActivationServlet extends HttpServlet {
         return;
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);//一般这么写
     }

@@ -14,6 +14,7 @@ public class NUserServiceImpl implements NUserService {
         this.dao = new NUserDaoImpl();
     }
 
+    @Override
     public String changePassword(NUser user, String newPassword) {
         return null;
     }
@@ -49,6 +50,7 @@ public class NUserServiceImpl implements NUserService {
         }
     }
 
+    @Override
     public String login(NUser user) {//形参对象有效
         List users = dao.findAll();
         if (users.size() != 0) {
@@ -77,6 +79,7 @@ public class NUserServiceImpl implements NUserService {
      * @param user
      * @return
      */
+    @Override
     public String register(NUser user) {
         List users = dao.findAll();
         for (Object obj : users) {

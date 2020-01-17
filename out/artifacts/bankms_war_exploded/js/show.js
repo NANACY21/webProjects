@@ -1,11 +1,12 @@
 
 //添加好友，跳转到好友信息表单
-function addFriend(arg0){
+function addFriend(arg0) {
     var innerHTML = arg0.innerHTML;
     alert(innerHTML);
-    location.href="info.jsp?reason=addNewF";
+    location.href = "info.jsp?reason=addNewF";
     return false;
 }
+
 
 //删除好友
 function deleteFriend(){
